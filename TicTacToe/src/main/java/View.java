@@ -211,10 +211,10 @@ public class View extends javax.swing.JFrame {
 
         // Check the rows and columns for a tic tac toe
         for (int i = 0; i < 3; i++) {
-            if (status[i][0].equals(status[i][1]) && status[i][0].equals(status[i][2])) {
+            if (status[i][0].equals(status[i][1]) && status[i][0].equals(status[i][2]) && !status[i][0].equals("")) {
                 return status[i][0];
             }
-            if (status[0][i].equals(status[1][i]) && status[0][i].equals(status[2][i])) {
+            if (status[0][i].equals(status[1][i]) && status[0][i].equals(status[2][i]) && !status[0][i].equals("")) {
                 return status[0][i];
             }
         }
